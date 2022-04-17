@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Sign In</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            background: linear-gradient(30deg,#FFDEAD, #f9d9af 50%,#ffedca 50%);
+        }
+        img{
+            padding-top: 20px;
+            margin-left: 100px;
+            height:100vh;
+        }
+     ul{
+         display: flex;
+     }
+     .work{
+         background-color:coral;
+      margin-left: 34px;
+      border-radius:16px;
+
+     }
+     li{
+         list-style: none;
+         padding: 30px;
+         font-size:larger;
+         font-family:Georgia, 'Times New Roman', Times, serif;  
+     }
+     span{
+         color:white;
+     }
+     .home{
+         margin-left: 50px;
+     }
+     a{
+         text-decoration: none;
+         color:black;
+     }
+     h1{
+         width:34vw;
+         margin-left: 45px;
+         margin-top:150px;
+         margin-left: 160px;
+         font-size:50px;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+     }
+     .f{
+         display:flex;
+     }
+     .thunder{
+         height:100px;
+     }
+     h2{
+         padding-left: 34px;
+         padding-top: 23px;
+     }
+     .btn{
+        margin-left: 300px;
+        margin-top: 60px;
+        cursor:pointer;
+        width: 200px;
+        height:50px;
+        font-size:23px;
+        border-radius:16px;
+        background-color:blanchedalmond;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+     }
+     .btn:hover{
+         background-color:brown;
+         color:azure;
+     }
+     .works{
+         text-align:center;
+         font-size: 25px;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+     }
+     .logo{
+         width: 100px;
+         height:100px;
+         align-items: center;
+         margin-left: 20px;
+     }
+     h5{
+         font-size: 15px;
+     }
+     p{
+         font-size: 18px;
+     }
+     .w{
+         display: flex;
+         margin-left:100px;
+         align-items: center;
+     }
+     #c1{
+         margin-left:100px;
+     }
+     #c2{
+         margin-left: 200px;
+     }
+     #c3{
+         margin-left:200px;
+     }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li><a href="#" >How it works</a></li>
+            <li><a href="#" >About Us</a></li>
+            <li><a href="#" >Contact</a></li>
+        </ul>
+    </nav>
+    <div class="f">
+        <div class="circus">
+        
+            <h1>SMART<span>TIMETABLE</span></h1>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut neque non, corrupti est quasi fugiat minus! 
+            Voluptatem, at! Debitis voluptates, quidem illo necessitatibus a adipisci facere odit
+             fuga ratione nobis?</h2>
+             <button class="btn" onClick="go()">Get Started</button>
+    </div>
+    
+        <div class="imga">
+    <img src="Screenshot__376_-removebg-preview.png" alt="" srcset="">
+</div>
+</div>
+<section class="works">
+    <h2>How it works</h2>
+    <br/>
+    <div class="w">
+    <div class="card work w1" id="c1" style="width: 12rem;height:15rem">
+        <img src="logo-tt.png" class="card-img-top logo" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Feed Timetable</h5>
+          <p class="card-text">Feed the original timetable into database , visible for users</p>
+        </div>
+      </div>
+      <div class="card work" id="c2" style="width: 12rem;height:15rem">
+        <img src="logo-tt.png" class="card-img-top logo" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">View Timetable</h5>
+          <p class="card-text">TimeTable viewing facility for students and teachers</p>
+        </div>
+      </div>
+      <div class="card work" id="c3"style="width: 12rem;height:15rem">
+        <img src="logo-tt.png" class="card-img-top logo" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Edit Timetable</h5>
+          <p class="card-text">Edit Timetable facility for teachers with valid access only</p>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<script>
+
+function go()
+{
+    window.location.href="itw2_cards.html";
+}
+</script>
+</body>
+</html>
