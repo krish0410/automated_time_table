@@ -1,100 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        *{
-            padding:0;
-            margin:0;
-        }
-        body{
-            background: linear-gradient(60deg,#FFDEAD, #f9d9af 50%,#ffedca 50%);
-            background-size: cover;
-        }
-        .home{
-            margin-left: 50px;
-        }
-        ul{
-            display: flex;
-        }
-        li{
-            list-style: none;
-            padding: 30px;
-            font-size:larger;
-            font-family:Georgia, 'Times New Roman', Times, serif;  
-        }
-        a{
-            text-decoration: none;
-            color:black;
-        }
-        form{
-            margin-left: 100px;
-            margin-top: 150px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 23px;
-        }
-        input{
-            width: 200px;
-            height:35px;
-            border-radius: 20px;
-            background-color: azure;
-            text-align: center;
-            font-size:18px;
-        }
-        .btn{
-            margin-left: 150px;
-            margin-top: 60px;
-            cursor:pointer;
-            width: 100px;
-            height:40px;
-            font-size:16px;
-            border-radius:16px;
-            background-color:blanchedalmond;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-         }
-         .btn:hover{
-             background-color:brown;
-             color:azure;
-         }
-         .f{
-             display:flex;
-             height:100vh;
-         }
-         img{
-             margin-left: 100px;
-             height: 500px;
-             width:500px;
-             
-         }
-    </style>
-</head>
-<body>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+   src="https://kit.fontawesome.com/64d58efce2.js"
+   crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="itw2_login.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <title>Sign in & Sign up Form</title>`
+  
+ </head>
+
+ <body>
+     
     <nav>
         <ul>
-            <li class="home"><a href="itw2_signin.html">Home</a></li>
-            <li><a href="#" >How it works</a></li>
-            <li><a href="#" >About Us</a></li>
-            <li><a href="#" >Contact</a></li>
+            <li class="home"><a href="itw2_index.html">Home</a></li>
+        <li><a href="itw2_index.html#krishworks">How it works</a></li>
+        <li><a href="itw2_index.html#ayushfooter">About Us</a></li>
+        <li><a href="itw2_index.html#cont">Contact</a></li>
         </ul>
     </nav>
-    <div class="f">
-    <form>
-        <label for="user">Enter Username :</label>
-        <input type="text" placeholder="Username"><br/><br/>
-        <label for="pass">Enter Password :</label>
-        <input type="password" placeholder="Password"><br/><br/>
-        <button class="btn" onClick="go()">Login</button>
-    </form>
-    <img src="man.png" alt="" srcset="">
-</div>
-<script>
-    function go()
-    {
-        window.location.href="itw2_cards.html";
-    }
-</script>
-</body>
+  <div class="container" style="border-radius: 30px;">
+   <div class="forms-container">
+    <div class="signin-signup">
+     <form action="#" class="sign-in-form">
+      <h2 class="title">Sign in</h2>
+      <div class="input-field">
+       <i class="fas fa-user"></i>
+       <input type="text" placeholder="Username" />
+      </div>
+      <div class="input-field">
+       <i class="fas fa-lock"></i>
+       <input type="password" placeholder="Password" />
+      </div>
+      <input class="btn solid" type="submit" value="Login" />
+      <p class="social-text">Or Sign in with social platforms</p>
+      <div class="social-media">
+       <a href="#" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+       </a>
+       <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+       </a>
+       <a href="#" class="social-icon">
+        <i class="fab fa-google"></i>
+       </a>
+       <a href="#" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+       </a>
+      </div>
+     </form>
+     <form action="#" class="sign-up-form">
+      <h2 class="title">Sign up</h2>
+      <div class="input-field">
+       <i class="fas fa-user"></i>
+       <input type="text" placeholder="Username" />
+      </div>
+      <div class="input-field">
+       <i class="fas fa-envelope"></i>
+       <input type="email" placeholder="Email" />
+      </div>
+      <div class="input-field">
+       <i class="fas fa-lock"></i>
+       <input type="password" placeholder="Password" />
+      </div>
+      <input type="submit" class="btn" value="Sign up"/>
+      <p class="social-text">Or Sign up with social platforms</p>
+      <div class="social-media">
+       <a href="#" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+       </a>
+       <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+       </a>
+       <a href="#" class="social-icon">
+        <i class="fab fa-google"></i>
+       </a>
+       <a href="#" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+       </a>
+      </div>
+     </form>
+    </div>
+   </div>
+
+   <div class="panels-container">
+    <div class="panel left-panel">
+     <div class="content">
+      <h3>New here ?</br> Just Login to see timetable</h3>
+      <p style="padding-top: 80px;font-size: larger;color: black;">
+       A perfect Timetable don't change itself,It changes the person accordingly.
+      </p>
+     
+     </div>
+     <img src="log.svg" class="image" alt="" />
+    </div>
+    <div class="panel right-panel">
+     <div class="content">
+      <h3>One of us?</h3>
+      <p>
+        Online tutor Finder provides students the best way to reach out the best tutor for them. 
+        Know more about us <a href="file:///D:/Agile%20Workshop/Reveal/index1.html">here</a>.
+      </p>
+      <button class="btn transparent" id="sign-in-btn">Sign in</button>
+     </div>
+     <img src="register.svg" class="image" alt="A picture here"/>
+    </div>
+   </div>
+  </div>
+  
+  <script src="app.js"></script>
+ </body>
 </html>
